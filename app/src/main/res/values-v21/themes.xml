@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Cooperate_Loading_View" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/new_oppo_color_c301</item>
+        <item name="android:layout_width">@dimen/common_dp_16</item>
+        <item name="android:layout_height">@dimen/common_dp_16</item>
+        <item name="android:indeterminateDrawable">@drawable/vivo_progress_medium_holo</item>
+    </style>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/new_oppo_color_c107">
+
+    <FrameLayout
+        android:id="@+id/fl_player_start"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_play_pause"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@drawable/audio_player_ic_play"
+            android:visibility="visible"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/img_play_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_player_loading"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_rollback"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_play_speed_rollback"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_player_start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fl_player_start" />
+
+    <ImageView
+        android:id="@+id/img_play_prev"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/player_prev_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_player_start"
+        app:layout_constraintRight_toLeftOf="@+id/fl_player_start"
+        app:layout_constraintTop_toTopOf="@+id/fl_player_start" />
+
+    <ImageView
+        android:id="@+id/img_play_next"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/player_next_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_player_start"
+        app:layout_constraintLeft_toRightOf="@+id/fl_player_start"
+        app:layout_constraintTop_toTopOf="@+id/fl_player_start" />
+
+
+    <ImageView
+        android:id="@+id/img_forward"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_play_speed_forward"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_player_start"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fl_player_start"
+        android:layout_marginRight="20dp"/>
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_clock"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/fl_player_start"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/fl_player_start">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/img_clock"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:src="@drawable/player_clock_selector" />-->
+
+<!--        <com.qq.reader.widget.ReaderTextView-->
+<!--            android:id="@+id/tv_clock_time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ellipsize="end"-->
+<!--            android:singleLine="true"-->
+<!--            android:text="@string/audio_player_progress_time_default"-->
+<!--            android:textColor="@color/new_oppo_color_c106"-->
+<!--            android:textSize="9sp"-->
+<!--            android:visibility="gone"-->
+<!--            tools:visibility="visible" />-->
+<!--    </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@ import com.yaohua.studies.utils.WeakReferenceHandler;
 
 public class AudioBookActivity extends AppCompatActivity implements Handler.Callback {
 
-    public static final String TAG = "AudioBookPlayLog";
+    public static final String TAG = "AudioBookActivity";
     protected WeakReferenceHandler mHandler;
 
     @Override
@@ -23,6 +23,14 @@ public class AudioBookActivity extends AppCompatActivity implements Handler.Call
         Log.i(TAG,"onCreate");
 
         mHandler = new WeakReferenceHandler(this);
+        initView();
+    }
+
+    private void initView() {
+//        initBookInfoView();
+//        initPlayControllerView();
+//        initShareView();
+//        initErrorView();
     }
 
     @Override

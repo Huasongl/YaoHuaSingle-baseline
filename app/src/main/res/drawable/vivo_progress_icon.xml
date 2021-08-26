@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+  <path
+      android:pathData="M8,16C3.5817,16 0,12.4183 0,8C0,3.5817 3.5817,0 8,0C12.4183,0 16,3.5817 16,8C16,12.4183 12.4183,16 8,16ZM8,14C4.6863,14 2,11.3137 2,8C2,4.6863 4.6863,2 8,2C11.3137,2 14,4.6863 14,8C14,11.3137 11.3137,14 8,14Z"
+      android:fillColor="@color/new_oppo_color_c301"
+      android:fillAlpha="0.1"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M0,8C0,3.5817 3.5817,0 8,0C8.5523,0 9,0.4477 9,1C9,1.5523 8.5523,2 8,2C4.6863,2 2,4.6863 2,8C2,8.5523 1.5523,9 1,9C0.4477,9 0,8.5523 0,8Z"
+      android:fillColor="@color/new_oppo_color_c301"
+      android:fillType="evenOdd"/>
+</vector>
