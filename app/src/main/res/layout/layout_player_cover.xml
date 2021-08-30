@@ -15,7 +15,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@color/color_c108" />
+        android:src="@color/color_c108" />
 
 <!--    <FrameLayout-->
 <!--        android:layout_width="5dp"-->
