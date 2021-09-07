@@ -10,7 +10,9 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
 
+import com.google.android.material.badge.BadgeDrawable;
 import com.yaohua.studies.R;
 import com.yaohua.studies.databinding.ActivityAudioBookBinding;
 import com.yaohua.studies.ui.view.IAlertDialog;
@@ -27,7 +29,6 @@ public class AudioBookActivity extends AppCompatActivity implements Handler.Call
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initView();
-        setContentView(audioBookBinding.getRoot());
         Log.i(TAG,"onCreate");
 
         mHandler = new WeakReferenceHandler(this);
