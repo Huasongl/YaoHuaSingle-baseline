@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BaseText.TS1">
+        <item name="android:textSize">@dimen/text_size_s1</item>
+    </style>
+
+    <style name="BaseText.TS2">
+        <item name="android:textSize">@dimen/text_size_s2</item>
+    </style>
+
+    <style name="BaseText.TS1.Medium">
+        <item name="android:fontFamily">@string/vivo_bold_font</item>
+    </style>
+
+    <style name="BaseText.TS1_M_C103" parent="@style/BaseText.TS1.Medium">
+        <item name="android:textColor">@color/color_c103</item>
+    </style>
+
+    <style name="BaseText.TS2_C103" parent="@style/BaseText.TS2">
+        <item name="android:textColor">@color/color_c103</item>
+    </style>
+
+    <style name="BaseText.TS2.Medium">
+        <item name="android:fontFamily">@string/vivo_bold_font</item>
+    </style>
+
+    <style name="BaseText.TS2_M_C103" parent="@style/BaseText.TS2.Medium">
+        <item name="android:textColor">@color/color_c103</item>
+    </style>
+
+    <style name="BaseText.TS2_TRAN50_C103">
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@color/new_oppo_color_transparent_c103</item>
+    </style>
+
+    <style name="BaseText.T3">
+        <item name="android:textSize">@dimen/text_size_3</item>
+    </style>
+
+    <style name="BaseText.T3_C103" parent="@style/BaseText.T3">
+        <item name="android:textColor">@color/color_c103</item>
+    </style>
+
+    <style name="BaseText.T3.Medium">
+        <item name="android:fontFamily">@string/vivo_bold_font</item>
+    </style>
+
+    <style name="BaseText.T3_M_C103" parent="@style/BaseText.T3.Medium">
+        <item name="android:textColor">@color/color_c103</item>
+    </style>
+
+    <style name="BaseText.TS2_C112" parent="@style/BaseText.TS2">
+        <item name="android:textColor">@color/new_oppo_color_c112</item>
+    </style>
+
+    <style name="BaseText.T1">
+        <item name="android:textSize">@dimen/text_size_1</item>
+    </style>
+
+    <style name="BaseText.T1_C112" parent="@style/BaseText.T1">
+        <item name="android:textColor">@color/new_oppo_color_c112</item>
+    </style>
+
+    <style name="BaseText.T3_C112" parent="@style/BaseText.T3">
+        <item name="android:textColor">@color/new_oppo_color_c112</item>
+    </style>
+
+    <style name="BaseText.TS2_M_C301" parent="@style/BaseText.TS2.Medium">
+        <item name="android:textColor">@color/new_oppo_color_c301</item>
+    </style>
+
+
+</resources>

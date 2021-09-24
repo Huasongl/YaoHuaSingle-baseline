@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- rectangle表示为矩形 -->
+
+            <solid android:color="@color/color_button_green_second_press" />
+
+            <!-- android:radius 圆角的半径 -->
+            <corners android:radius="20dp" />
+
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <!-- rectangle表示为矩形 -->
+
+            <solid android:color="@color/color_button_green_second" />
+
+            <!-- android:radius 圆角的半径 -->
+            <corners android:radius="20dp" />
+
+        </shape>
+    </item>
+</selector>

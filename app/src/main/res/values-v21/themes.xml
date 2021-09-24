@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Cooperate_Loading_View" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/new_oppo_color_c301</item>
+        <item name="android:layout_width">@dimen/common_dp_16</item>
+        <item name="android:layout_height">@dimen/common_dp_16</item>
+        <item name="android:indeterminateDrawable">@drawable/vivo_progress_medium_holo</item>
+    </style>
+
+    <style name="VivoTheme.Dialog" parent="@style/Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowFixedWidthMajor">304dp</item>
+        <item name="windowFixedWidthMinor">304dp</item>
+    </style>
+
+    <style name="VivoDialogButtonStyle" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/vivo_dialog_button</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="VivoDialogPositiveButtonStyle" parent="@style/VivoDialogButtonStyle">
+        <item name="android:background">@drawable/vivo_positive_dialog_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="popBottomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+    </style>
+
+    <style name="VivoRadio" >
+        <item name="android:drawableStart">@drawable/vivo_btn_radio</item>
+    </style>
+</resources>

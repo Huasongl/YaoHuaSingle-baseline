@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">YaoHuaSingle-baseline</string>
+
+    <string name="vivo_bold_font">sans-serif-medium</string>
+
+    <string name="audio_player_read_text">阅读原文</string>
+    <string name="audio_player_speed_title">倍速</string>
+    <string name="audio_player_clock">定时</string>
+    <string name="audio_player_speed">倍速</string>
+    <string name="audio_player_directory">目录</string>
+    <string name="audio_player_bottom_add_shelf">加书架</string>
+    <string name="audio_player_bottom_added_shelf">在书架</string>
+    <string name="audio_player_bottom_download_pre">下载</string>
+    <string name="audio_player_bottom_more">更多</string>
+    <string name="audio_player_dialog_more_auto_buy">自动购买下一集</string>
+    <string name="audio_player_dialog_more_title">更多</string>
+    <string name="audio_player_progress_time_default">00:00</string>
+    <string name="audio_player_toast_chapters_fail">获取章节失败</string>
+    <string name="audio_home_gift_title">领取成功</string>
+    <string name="audio_home_other_shelf">%s上架</string>
+    <string name="audio_home_part">%s/集</string>
+    <string name="audio_player_net_switch_note">已切换到移动网络，是否继续播放？</string>
+    <string name="audio_author_info">%s</string>
+    <string name="pulling_book_info">正在拉取书籍信息</string>
+    <string name="detail_empty_text">网络异常，请检查网络连接。</string>
+    <string name="refresh_network">点击屏幕刷新</string>
+    <string name="setting_network">设置网络</string>
+
+</resources>
