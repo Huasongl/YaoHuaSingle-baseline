@@ -11,13 +11,13 @@ public class UserServiceTest extends TestCase{
 //        return true;
 //    }
 //
-    public static void main(String[] args){
-//        if(doTest()){
-//            System.out.println("Text succeed.");
-//        }else{
-//            System.out.println("Test failed.");
-//        }
-        JunitApplication.register(new UserServiceTest());
-        JunitApplication.main();
-    }
+//    public static void main(String[] args){
+////        if(doTest()){
+////            System.out.println("Text succeed.");
+////        }else{
+////            System.out.println("Test failed.");
+////        }
+//        JunitApplication.register(new UserServiceTest());
+//        JunitApplication.main();
+//    }
 }
