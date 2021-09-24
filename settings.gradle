@@ -1,2 +1,3 @@
 rootProject.name = "YaoHuaSingle-baseline"
 include ':app'
+include ':libs'
