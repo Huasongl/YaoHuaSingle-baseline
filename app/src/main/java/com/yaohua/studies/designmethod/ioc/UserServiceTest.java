@@ -1,7 +1,5 @@
 package com.yaohua.studies.designmethod.ioc;
 
-import com.yaohua.studies.routemodule.JumpActivityParameter;
-
 public class UserServiceTest extends TestCase{
     @Override
     public boolean doTest() {

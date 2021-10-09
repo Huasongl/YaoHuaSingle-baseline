@@ -1,11 +1,8 @@
 package com.yaohua.studies.audioBookModule;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -13,13 +10,16 @@ import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.google.android.material.badge.BadgeDrawable;
+import com.yaohua.routemoudle.RoutePath;
 import com.yaohua.studies.R;
 import com.yaohua.studies.databinding.ActivityAudioBookBinding;
 import com.yaohua.studies.ui.view.IAlertDialog;
 import com.yaohua.studies.ui.view.ReaderAlertDialog;
 import com.yaohua.studies.utils.WeakReferenceHandler;
 
+@Route(path = RoutePath.APP_MODULE_SERVICE)
 public class AudioBookActivity extends AppCompatActivity implements Handler.Callback {
 
     private ActivityAudioBookBinding audioBookBinding;
