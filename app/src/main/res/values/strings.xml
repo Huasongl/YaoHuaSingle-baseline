@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">YaoHuaSingle-baseline</string>
+    <string name="app_name">YaoHuaApp</string>
 
     <string name="vivo_bold_font">sans-serif-medium</string>
 
@@ -25,5 +25,11 @@
     <string name="detail_empty_text">网络异常，请检查网络连接。</string>
     <string name="refresh_network">点击屏幕刷新</string>
     <string name="setting_network">设置网络</string>
+    <string name="app_criminalintent_entrance">criminalIntent_entrance</string>
 
+
+    <string name="crime_title_hint">Enter a title for the crime.</string>
+    <string name="crime_title_label">Title</string>
+    <string name="crime_details_label">Details</string>
+    <string name="crime_solved_label">Solved</string>
 </resources>

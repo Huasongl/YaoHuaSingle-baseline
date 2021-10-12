@@ -32,4 +32,6 @@ public class RoutePath {
     public static final String AUDIO_BOOK_PLAYER_TIME_REPORT_SERVICE = "/audioBookModule/player/reporttime/";
 
 
+    public static final String CRIMINAL_ACTIVITY = "/criminalintent/uifragment";
 }
+
