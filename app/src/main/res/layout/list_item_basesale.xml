@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item_basesale_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layoutDescription="@xml/list_item_basesale_scene">
+
+    <TextView
+        android:id="@+id/list_item_crime_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+
+        android:text="听"
+        android:padding="@dimen/common_dp_10"
+        app:layout_constraintBottom_toTopOf="@+id/list_item_crime_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginLeft="200dp" />
+
+    <TextView
+        android:id="@+id/list_item_crime_content"
+        android:layout_marginStart="200dp"
+        android:text="删除"
+        android:layout_width="match_parent"
+        android:padding="@dimen/common_dp_10"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_item_crime_title"
+        android:layout_marginLeft="200dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

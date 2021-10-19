@@ -6,12 +6,14 @@ import androidx.fragment.app.FragmentManager;
 
 import android.graphics.Path;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.yaohua.routemoudle.RoutePath;
 import com.yaohua.studies.R;
 import com.yaohua.studies.criminalIntent.uifragment.CrimeFragment;
+import com.yaohua.studies.criminalIntent.uifragment.CrimeListFragment;
 
 @Route(path = RoutePath.CRIMINAL_ACTIVITY)
 public class CriminalIntentActivity extends AppCompatActivity {
@@ -23,10 +25,10 @@ public class CriminalIntentActivity extends AppCompatActivity {
 
         Fragment fg = getSupportFragmentManager().findFragmentById(R.id.criminal_fragment_container);
         if(fg == null){
-            fg = new CrimeFragment();
+            fg = CrimeListFragment.getInstance();
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.criminal_fragment_container,fg)
+                    .replace(R.id.criminal_fragment_container,fg,CrimeListFragment.class.getSimpleName())
                     .commit();
         }
     }

@@ -13,12 +13,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CommonModule" />
             <option value="$PROJECT_DIR$/DesignPattern" />
+            <option value="$PROJECT_DIR$/LogModule" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/audiobookmoudle" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/libs" />
             <option value="$PROJECT_DIR$/readenginemoudle" />
             <option value="$PROJECT_DIR$/routemoudle" />
+            <option value="$PROJECT_DIR$/structure" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AudioBookMoudle</string>
+    <string name="audio_book_play">Play</string>
 </resources>
