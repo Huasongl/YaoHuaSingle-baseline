@@ -2,6 +2,7 @@ package com.yaohua.structure;
 
 
 import java.util.List;
+import java.util.jar.JarEntry;
 
 public class ArrayListSort {
     public static int TYPE_SORT_BUBBLE = 1;
@@ -51,5 +52,51 @@ public class ArrayListSort {
         }
     }
 
+    public <E extends Comparable<E>> void insert_sort(E[] list){
+        E currentElement;
+        int j;
+        for(int i = 1; i< list.length; ++i){
+            currentElement = list[i];
+            for ( j = i-1; j>= 0; --j){
+                if(list[j].compareTo(currentElement)>0){
+                    list[j+1] = list[j];
+                }
+            }
+            list[j+1] = currentElement;
+        }
+    }
+
+    public <E extends Comparable<E>> void insert_sort_1(E[] list){
+        E currentElement;
+        int j;
+        for(int i =1;i< list.length;++i){
+            currentElement = list[i];
+            for ( j = i-1;j>=0;--j){
+                if(list[j].compareTo(currentElement)>0){
+                    list[j+1] = list[j];
+                }
+            }
+            list[j+1] = currentElement;
+        }
+    }
+
+    public static <E extends Comparable<E>> void select_sort(E[] list){
+        E currentElement;
+        int index;
+        for(int i = 0; i<list.length-1; ++i){
+            currentElement = list[i];
+            index = i;
+            for(int j = i+1; j< list.length; ++j){
+                if(currentElement.compareTo(list[j])>0){
+                    currentElement = list[j];
+                    index = j;
+                }
+            }
+            if(index!= i){
+                list[index] = list[i];
+                list[i] =currentElement;
+            }
+        }
+    }
 
 }
