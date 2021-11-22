@@ -9,8 +9,16 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.PriorityQueue;
+import java.util.TreeMap;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttp;
+import okhttp3.OkHttpClient;
 
 public class SerializableText {
     private static final String PATH = "./super.bin";
@@ -25,6 +33,10 @@ public class SerializableText {
         ArrayListSort.bubble_sort(strings);
         System.out.println(Arrays.toString(strings));
         Arrays.asList("1","2","3");
+        OkHttpClient client = new OkHttpClient();
+        OkHttpClient client1 = client.newBuilder()
+                .readTimeout(10, TimeUnit.SECONDS)
+                .build();
     }
 
     private static void serializeAnimal() throws Exception {
