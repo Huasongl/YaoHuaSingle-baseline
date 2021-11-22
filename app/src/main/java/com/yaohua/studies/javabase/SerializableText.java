@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -23,38 +24,31 @@ import okhttp3.OkHttpClient;
 public class SerializableText {
     private static final String PATH = "./super.bin";
 
-    public static void main(String[] args) throws Exception {
-        Integer[] integers = {1, 3, -2, -10};
-        System.out.println(Arrays.toString(integers));
-        ArrayListSort.select_sort(integers);
-        System.out.println(Arrays.toString(integers));
-        String[] strings = {"11", "3", "2", "10"};
-        System.out.println(Arrays.toString(strings));
-        ArrayListSort.bubble_sort(strings);
-        System.out.println(Arrays.toString(strings));
-        Arrays.asList("1","2","3");
-        OkHttpClient client = new OkHttpClient();
-        OkHttpClient client1 = client.newBuilder()
-                .readTimeout(10, TimeUnit.SECONDS)
-                .build();
+    public static void main(String[] args) {
+        int dTestArray[] = {1,8,6,9,10,15,12,20};
+        ArrayList<Integer> res = new ArrayList<>();
+        findThePivotElement(dTestArray,dTestArray.length,res);
+        System.out.println(res);
     }
 
-    private static void serializeAnimal() throws Exception {
-        BlackAnimal black = new BlackAnimal("black", "我是黑猫");
-        System.out.println("序列化前："+black.toString());
-        System.out.println("=================开始序列化================");
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(PATH));
-        oos.writeObject(black);
-        oos.flush();
-        oos.close();
-    }
-
-    private static void deserializeAnimal() throws Exception {
-        System.out.println("=================开始反序列化================");
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(PATH));
-        BlackAnimal black = (BlackAnimal) ois.readObject();
-        ois.close();
-        System.out.println(black);
+    private static void findThePivotElement(int[] data, int len, ArrayList<Integer> res) {
+        int[] tempArray = new int[len];
+        int r_min = data[len-1];
+        for(int i = len-1;i>=0;--i){
+            if(data[i]<r_min){
+                r_min = data[i];
+            }
+            tempArray[i] = r_min;
+        }
+        int l_max = data[0];
+        for (int i = 0;i<len-1;++i){
+            if(data[i]>l_max){
+                l_max = data[i];
+                if(data[i]<tempArray[i+1]){
+                    res.add(data[i]);
+                }
+            }
+        }
     }
 
 }

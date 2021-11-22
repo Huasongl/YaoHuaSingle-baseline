@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) relativeLayout.getLayoutParams();
         layoutParams.topMargin = 100;
         relativeLayout.setLayoutParams(layoutParams);
-        Intent
 
 //        Button criminalIntent = findViewById(R.id.criminalIntent);
 //        criminalIntent.setOnClickListener(new View.OnClickListener() {
@@ -53,4 +52,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
+
+
 }
