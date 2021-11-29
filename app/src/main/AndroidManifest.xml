@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yaohua.studies">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".AbsApplication"
@@ -10,9 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YaoHuaSinglebaseline">
-        <activity android:name=".criminalIntent.CriminalIntentActivity"></activity>
-        <activity android:name=".activity.SplashActivity"></activity>
-        <activity android:name=".audioBookModule.AudioBookActivity"></activity>
+        <activity android:name=".criminalIntent.CriminalIntentActivity">
+        </activity>
+        <activity android:name=".activity.SplashActivity">
+        </activity>
+        <activity android:name=".audioBookModule.AudioBookActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
