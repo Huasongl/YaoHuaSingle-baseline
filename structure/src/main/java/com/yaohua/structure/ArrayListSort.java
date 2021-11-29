@@ -2,6 +2,7 @@ package com.yaohua.structure;
 
 
 import java.util.List;
+import java.util.Stack;
 import java.util.jar.JarEntry;
 
 public class ArrayListSort {
@@ -96,6 +97,89 @@ public class ArrayListSort {
                 list[index] = list[i];
                 list[i] =currentElement;
             }
+        }
+    }
+
+    //expression evaluate values
+    public static class EvaluateExpression{
+        public static void fun(String[] args){
+            if(args.length!=1){
+                System.out.println("Usage: java EvaluateExpression\"expression\"");
+                System.exit(1);
+            }
+            try{
+                System.out.println(evaluateExpression(args[0]));
+            }catch (Exception exception){
+                System.out.println("Wrong expression: "+args[0]);
+            }
+        }
+
+        private static int evaluateExpression(String expression) {
+            Stack<Integer> operandStack = new Stack<>();
+            Stack<Character>operatorStack = new Stack<>();
+            expression = insertBlacks(expression);
+            String[] tokens = expression.split(" ");
+            for(String token : tokens){
+                if(token.length()==0) continue;
+                else if(token.charAt(0) =='+' || token.charAt(0) =='-'){
+                    while(operatorStack.peek() =='+' ||
+                            operatorStack.peek() =='-'||
+                            operatorStack.peek() =='*'||
+                            operatorStack.peek() =='/'){
+                        processAnOperator(operandStack,operatorStack);
+                    }
+                    operatorStack.push(token.charAt(0));
+                }if(token.charAt(0) =='*' || token.charAt(0)=='/'){
+                    while(operatorStack.peek() =='*'||
+                    operatorStack.peek() =='/'){
+                        processAnOperator(operandStack,operatorStack);
+                    }
+                    operatorStack.push(token.charAt(0));
+                }else if(token.trim().charAt(0) =='('){
+                    operatorStack.push('(');
+                }else if(token.trim().charAt(0) ==')'){
+                    while (operatorStack.peek()!='('){
+                        processAnOperator(operandStack,operatorStack);
+                    }
+                    operatorStack.pop();
+                }
+                else {
+                    operandStack.push(Integer.valueOf(token));
+                }
+            }
+            while (!operatorStack.isEmpty()){
+                processAnOperator(operandStack,operatorStack);
+            }
+            return operandStack.pop();
+        }
+
+        private static void processAnOperator(Stack<Integer> operandStack, Stack<Character> operatorStack) {
+            char op =operatorStack.pop();
+            int op1 = operandStack.pop();
+            int op2 = operandStack.pop();
+            if(op =='+'){
+                operandStack.push(op1+op2);
+            }else if(op =='-'){
+                operandStack.push(op1+op2);
+            }else if(op =='*'){
+                operandStack.push(op1*op2);
+            }else if(op =='/'){
+                operandStack.push(op2/op1);
+            }
+        }
+
+        private static String insertBlacks(String s) {
+            StringBuilder result = new StringBuilder();
+            for(int i = 0;i<s.length();++i){
+                if(s.charAt(i) =='(' || s.charAt(i) ==')'||
+                s.charAt(i) =='+'||s.charAt(i)=='-'||s.charAt(i)=='*'
+                ||s.charAt(i)=='/'){
+                    result.append(" ").append(s.charAt(i)).append(" ");
+                }else {
+                    result.append(s.charAt(i));
+                }
+            }
+            return result.toString();
         }
     }
 
