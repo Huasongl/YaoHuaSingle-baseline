@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CommonModule" />
+            <option value="$PROJECT_DIR$/CustomView" />
             <option value="$PROJECT_DIR$/DesignPattern" />
             <option value="$PROJECT_DIR$/LogModule" />
             <option value="$PROJECT_DIR$/app" />

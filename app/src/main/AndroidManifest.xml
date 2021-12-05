@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".audioBookModule.AudioBookActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.baseui.customview.activity.ClockViewGroupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

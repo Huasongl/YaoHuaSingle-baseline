@@ -1,0 +1,1 @@
+package com.baseui.customview;public class CustomView_MainActivity {}
